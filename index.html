@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header-img" src="./img/andro.webp" alt="Logo">
+    </header>
+
+    <main class="main">
+        <section class="input-section">
+            <h1 class="title">Crypto<strong>/</strong>text</h1>
+            <textarea id="inputText" class="textarea" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="note"><img src="./img/signo-exclamacion.png" alt="Exclamación"> Solo letras minúsculas y sin acentos</p>
+            <div class="btn-group">
+                <button id="encryptBtn" class="btn encrypt-btn" onclick="encrypt()">Encriptar</button>
+                <button id="decryptBtn" class="btn decrypt-btn" onclick="decrypt()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="result-section">
+            <div class="result-container">
+                <section class="result-initial">
+                    <img class="initial-img" src="./img/tortu.png" alt="Persona Alura">
+                    <p class="initial-msg1">Ningún mensaje fue encontrado</p>
+                    <p class="initial-msg2">Ingrese el texto que deseas encriptar o desencriptar</p>
+                </section>
+                <textarea id="resultText" class="result-text" readonly></textarea>
+                <button id="copyBtn" class="copy-btn" onclick="copy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer-text">© Developed by Thecros</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
